@@ -4,7 +4,7 @@
       <vs-icon v-if="$slots.edit" class="icon-edit" icon="edit"> </vs-icon>
       <slot></slot>
       <span v-if="$slots.edit" class="empty">
-        {{ data || data === 0 || "Empty" }}
+        {{ data || data === 0 ? "" : "Empty" }}
       </span>
     </span>
 
